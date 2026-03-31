@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fdf51c08ea57a44aabc860ddedb34c, type: 3}
+  m_Name: ProteinBar
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemName: Protein Bar
+  icon: {fileID: -1921134199, guid: 036ac28a148fa7d45b6fa7a383adbedf, type: 3}
+  description: '15 g Protein Bar! Can make meI feel stronger
+
+    (+3 ATK)'
+  price: 25
+  isUsable: 1
+  consumeOnUse: 1

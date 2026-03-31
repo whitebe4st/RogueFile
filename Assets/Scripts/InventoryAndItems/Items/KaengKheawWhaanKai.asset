@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fdf51c08ea57a44aabc860ddedb34c, type: 3}
+  m_Name: KaengKheawWhaanKai
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemName: KaengKheawWhanKai
+  icon: {fileID: 24657332, guid: 6666839ab9a16be419b01b95d9bba2cf, type: 3}
+  description: "Green Curry with Chicken is one of Thailand\u2019s most famous exports,
+    known for its vibrant color and the perfect balance of \"sweet, salty, and spicy.\""
+  price: 30
+  isUsable: 1
+  consumeOnUse: 1

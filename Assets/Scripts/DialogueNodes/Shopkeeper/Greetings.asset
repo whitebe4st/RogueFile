@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-595879959539621014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccacf7ca622041dd914b1434e2ef469, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.DialogueNode
+  graph: {fileID: 11400000}
+  position: {x: -0.40000916, y: -169}
+  ports:
+    keys:
+    - Previous
+    - Next
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -595879959539621014}
+      _typeQualifiedName: DialogueSystem.DialogueNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -595879959539621014}
+      _typeQualifiedName: DialogueSystem.DialogueNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 4423774335054947487}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Previous: {fileID: 0}
+  SpeakerName: Jerry
+  DialogueText: Hm..?
+  characterProfile: {fileID: 11400000, guid: c0dc1980b51548949a6ea7fab1dcfb94, type: 2}
+  emotionKey: Neutral
+  Choices: []
+  OnNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  EventKey: 
+  Next: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9492f83a31e6e5641a41447004864530, type: 3}
+  m_Name: Greetings
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.DialogueGraph
+  nodes:
+  - {fileID: -595879959539621014}
+  - {fileID: 4423774335054947487}
+--- !u!114 &4423774335054947487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccacf7ca622041dd914b1434e2ef469, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.DialogueNode
+  graph: {fileID: 11400000}
+  position: {x: 547.8518, y: -23.458025}
+  ports:
+    keys:
+    - Previous
+    - Next
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 4423774335054947487}
+      _typeQualifiedName: DialogueSystem.DialogueNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: -595879959539621014}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 4423774335054947487}
+      _typeQualifiedName: DialogueSystem.DialogueNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Previous: {fileID: 0}
+  SpeakerName: Jerry
+  DialogueText: Need something ?
+  characterProfile: {fileID: 11400000, guid: c0dc1980b51548949a6ea7fab1dcfb94, type: 2}
+  emotionKey: Neutral
+  Choices: []
+  OnNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  EventKey: 
+  Next: {fileID: 0}

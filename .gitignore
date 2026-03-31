@@ -1,0 +1,21 @@
+# Ignore Everything
+*
+
+# Allow traversing directories to find files
+!*/
+
+# Whitelist Folders (keep scripts)
+!/Assets/Scripts/
+!/Assets/Scripts/**
+
+# Whitelist Specific Files (Dify export and setup guides)
+!/Assets/RogueFile.yml
+!/Overall_Setup_Guide.md
+!/minigame_flowcharts.md
+!/walkthrough.md
+!/task.md
+!/implementation_plan.md
+
+# Keep Git configs
+!.gitignore
+!.gitattributes

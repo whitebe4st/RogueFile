@@ -11,6 +11,7 @@
 # Whitelist Specific Files (Dify export and setup guides)
 !/Assets/RogueFile.yml
 !/Overall_Setup_Guide.md
+!/README.md
 !/minigame_flowcharts.md
 !/walkthrough.md
 !/task.md
